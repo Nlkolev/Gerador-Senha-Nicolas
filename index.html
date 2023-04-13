@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador Bolado</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo">GERADOR BOLADO DE SENHAS 2000</h1>
+
+    <main class="container-input">
+        <span>O tamanho é <span id="valor"></span> caracteres</span>
+        <input id="slider" class="slider" type="range" min="6" max="12" value="9" />
+
+        <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha</button>
+    </main>
+
+    <div id="container-password" onclick="copyPassword()" class="container-password hide">
+        <span class="title"> A senha gerada é: </span>
+        <span id="password" class="password">teste</span>
+        <span class="tooltip">Caso queira copiar a senha, apenas clique</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

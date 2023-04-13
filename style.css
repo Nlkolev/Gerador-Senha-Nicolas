@@ -1,0 +1,129 @@
+*{
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(38, 4, 230, 0.863);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+   background-image: linear-gradient(to bottom, #eb0c0c, #330be6);
+}
+
+.container-input{
+    max-width: 480px;
+    margin: 14px 0;
+    text-align: center;
+}
+
+.container-input span{
+    color: #dfdfdf;
+    font-size: 30px;
+    
+}
+
+.titulo{
+    font-family: lucida console;
+    color:#dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    margin-top: 10px;
+    width: 100%; 
+    font-size: 70px;
+}
+
+.slider{
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #dfdfdf;
+  height: 15px;
+  outline: none;
+  margin-top: 10px;  
+}
+
+.button-cta{
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    color: #fff;
+    
+}
+
+.button-cta:hover{
+    border: 4;
+    border-color: white;
+    font-weight: bold;    
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.container-password{
+   max-width: 480px;
+   color: #dfdfdf;
+   margin: 14px 0;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    color: #dfdfdf;
+    font-size: 20px;
+}
+
+.password{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    color: #dfdfdf;
+    border: 3px solid #494949;
+    transition: transform 0.5s;
+}
+
+.password:hover{
+    transform: scale(1.05);
+    border-color: rgb(197, 197, 197);
+    font-weight: bold;
+}
+
+.tooltip{
+    color: #dfdfdf;
+    position: relative;
+    top: 20px;
+    padding: 5px 8px;
+    border: solid #494949;
+    background-color: rgba(0, 0, 0, 0.308);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.hide{
+    display: none;
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
